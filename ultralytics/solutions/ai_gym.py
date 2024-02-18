@@ -63,8 +63,7 @@ class AIGym:
         self.posedown_angle = pose_down_angle
         self.pose_type = pose_type
         
-    def get_counts(self):
-        return self.count
+
     
     def start_counting(self, im0, results, frame_count):
         """
@@ -153,9 +152,11 @@ class AIGym:
             cv2.imshow("Ultralytics YOLOv8 AI GYM", self.im0)
             if cv2.waitKey(1) & 0xFF == ord("q"):
                 return
-
+    
         return self.im0
-
+                
+    def get_counts(self):
+        return self.count
 
 if __name__ == "__main__":
     AIGym()
