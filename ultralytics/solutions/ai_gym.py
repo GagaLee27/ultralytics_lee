@@ -39,7 +39,7 @@ class AIGym:
     def set_args(
         self,
         kpts_to_check,
-        line_thickness=2,
+        line_thickness=10,
         view_img=False,
         pose_up_angle=145.0,
         pose_down_angle=90.0,
