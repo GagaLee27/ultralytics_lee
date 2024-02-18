@@ -39,7 +39,7 @@ class AIGym:
     def set_args(
         self,
         kpts_to_check,
-        line_thickness=10,
+        line_thickness=2,
         view_img=False,
         pose_up_angle=145.0,
         pose_down_angle=90.0,
@@ -150,9 +150,8 @@ class AIGym:
             cv2.imshow("Ultralytics YOLOv8 AI GYM", self.im0)
             if cv2.waitKey(1) & 0xFF == ord("q"):
                 return
-        print(self.keypoints)
 
-        return self.im0, self.keypoints, self.kpts_to_check
+        return self.im0
 
 
 if __name__ == "__main__":
