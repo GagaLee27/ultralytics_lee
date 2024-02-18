@@ -151,7 +151,7 @@ class AIGym:
             if cv2.waitKey(1) & 0xFF == ord("q"):
                 return
 
-        return self.im0
+        return self.im0, self.keypoints, self.kpts_to_check
 
 
 if __name__ == "__main__":
