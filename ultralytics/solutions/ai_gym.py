@@ -62,7 +62,10 @@ class AIGym:
         self.poseup_angle = pose_up_angle
         self.posedown_angle = pose_down_angle
         self.pose_type = pose_type
-
+        
+    def get_counts(self):
+        return self.count
+    
     def start_counting(self, im0, results, frame_count):
         """
         Function used to count the gym steps.
