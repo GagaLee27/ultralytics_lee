@@ -150,6 +150,7 @@ class AIGym:
             cv2.imshow("Ultralytics YOLOv8 AI GYM", self.im0)
             if cv2.waitKey(1) & 0xFF == ord("q"):
                 return
+        print(self.keypoints)
 
         return self.im0, self.keypoints, self.kpts_to_check
 
